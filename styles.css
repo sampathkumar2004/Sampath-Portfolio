@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: #2e1a47; /* Deep eggplant */
-    color: #e6e6e6;
+    background: #1F2526; /* Dark Gray */
+    color: #CFD8DC; /* Light Gray */
     line-height: 1.6;
 }
 
@@ -16,14 +16,14 @@ body {
     top: 0;
     left: 0;
     height: 4px;
-    background: #6b4e9b; /* Vibrant royal purple */
+    background: #26A69A; /* Teal */
     width: 0;
     z-index: 1001;
     transition: width 0.2s ease-out;
 }
 
 header {
-    background: #3d2b56; /* Dark royal purple */
+    background: #3A4445; /* Medium Gray */
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -31,17 +31,17 @@ header {
     position: fixed;
     width: 100%;
     z-index: 1000;
-    border-bottom: 1px solid #4b3a6b;
+    border-bottom: 1px solid #4A5455;
 }
 
 .logo {
     font-size: 1.5em;
     font-weight: 600;
-    color: #a68bc5; /* Light purple */
+    color: #26A69A; /* Teal */
 }
 
 nav a {
-    color: #e6e6e6;
+    color: #CFD8DC; /* Light Gray */
     text-decoration: none;
     margin-left: 25px;
     font-weight: 400;
@@ -49,7 +49,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #6b4e9b; /* Vibrant royal purple */
+    color: #26A69A; /* Teal */
 }
 
 #hero {
@@ -58,19 +58,19 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(to bottom, #2e1a47, #3d2b56);
+    background: linear-gradient(to bottom, #1F2526, #3A4445); /* Dark to Medium Gray */
 }
 
 .hero-content h1 {
     font-size: 3.5em;
     font-weight: 800;
-    color: #a68bc5; /* Light purple */
+    color: #26A69A; /* Teal */
     margin-bottom: 20px;
 }
 
 .fade-words {
     font-size: 1.5em;
-    color: #e6e6e6;
+    color: #CFD8DC; /* Light Gray */
 }
 
 .fade-words span {
@@ -79,19 +79,19 @@ nav a:hover {
 }
 
 .fade-words span:nth-child(1) {
-    animation-delay: 0.5s; /* "Web Developer" fades in first */
+    animation-delay: 0.5s;
 }
 
 .fade-words span:nth-child(3) {
-    animation-delay: 1.5s; /* "AI Enthusiast" fades in second */
+    animation-delay: 1.5s;
 }
 
 .cta-button {
     display: inline-block;
     margin-top: 30px;
     padding: 12px 30px;
-    background: #6b4e9b; /* Vibrant royal purple */
-    color: #e6e6e6;
+    background: #26A69A; /* Teal */
+    color: #CFD8DC; /* Light Gray */
     text-decoration: none;
     font-weight: 600;
     border-radius: 5px;
@@ -99,7 +99,7 @@ nav a:hover {
 }
 
 .cta-button:hover {
-    background: #5a3f85; /* Darker royal purple */
+    background: #1E8378; /* Darker Teal */
     transform: translateY(-3px);
 }
 
@@ -112,10 +112,11 @@ main {
 section {
     padding: 40px;
     margin-bottom: 40px;
-    background: rgba(61, 43, 86, 0.8); /* Dark royal purple with transparency */
+    background: rgba(58, 68, 69, 0.8); /* Medium Gray with transparency */
     backdrop-filter: blur(10px);
     border-radius: 8px;
-    border: 1px solid rgba(75, 58, 107, 0.5);
+    border: 1px solid rgba(74, 84, 85, 0.5);
+    padding-top: 80px;
 }
 
 .fade-in {
@@ -132,7 +133,7 @@ section {
 h2 {
     font-size: 2em;
     font-weight: 600;
-    color: #a68bc5; /* Light purple */
+    color: #26A69A; /* Teal */
     margin-bottom: 20px;
     position: relative;
 }
@@ -142,7 +143,7 @@ h2::after {
     position: absolute;
     width: 40px;
     height: 2px;
-    background: #6b4e9b; /* Vibrant royal purple */
+    background: #26A69A; /* Teal */
     bottom: -5px;
     left: 0;
 }
@@ -157,7 +158,7 @@ h2::after {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    border: 2px solid #6b4e9b; /* Vibrant royal purple */
+    border: 2px solid #26A69A; /* Teal */
     transition: transform 0.3s;
 }
 
@@ -181,17 +182,17 @@ h2::after {
 }
 
 .project-card {
-    background: rgba(71, 52, 102, 0.8); /* Slightly lighter purple with transparency */
+    background: rgba(58, 68, 69, 0.8); /* Medium Gray with transparency */
     backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid rgba(75, 58, 107, 0.5);
+    border: 1px solid rgba(74, 84, 85, 0.5);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(107, 78, 155, 0.6), 0 0 30px rgba(107, 78, 155, 0.4);
+    box-shadow: 0 5px 20px rgba(38, 166, 154, 0.6), 0 0 30px rgba(38, 166, 154, 0.4); /* Teal glow */
 }
 
 .project-img {
@@ -203,24 +204,24 @@ h2::after {
 }
 
 .project-link {
-    color: #6b4e9b; /* Vibrant royal purple */
+    color: #26A69A; /* Teal */
     text-decoration: none;
     font-weight: 600;
 }
 
 .project-link:hover {
-    color: #a68bc5; /* Light purple */
+    color: #CFD8DC; /* Light Gray */
     text-decoration: underline;
 }
 
 .social-links a {
-    color: #6b4e9b;
+    color: #26A69A; /* Teal */
     text-decoration: none;
     margin: 0 10px;
 }
 
 .social-links a:hover {
-    color: #a68bc5;
+    color: #CFD8DC; /* Light Gray */
 }
 
 .social-links i {
@@ -230,18 +231,18 @@ h2::after {
 footer {
     text-align: center;
     padding: 20px;
-    background: rgba(61, 43, 86, 0.8); /* Match section style */
+    background: rgba(58, 68, 69, 0.8); /* Medium Gray */
     backdrop-filter: blur(10px);
-    border-top: 1px solid rgba(75, 58, 107, 0.5);
-    color: #e6e6e6;
+    border-top: 1px solid rgba(74, 84, 85, 0.5);
+    color: #CFD8DC;
 }
 
 #back-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #6b4e9b;
-    color: #e6e6e6;
+    background: #26A69A; /* Teal */
+    color: #CFD8DC; /* Light Gray */
     border: none;
     border-radius: 50%;
     width: 40px;
@@ -258,6 +259,7 @@ footer {
 
 #back-to-top:hover {
     transform: scale(1.1);
+    background: #1E8378; /* Darker Teal */
 }
 
 @keyframes fadeIn {
