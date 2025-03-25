@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: #2e1a47; /* Deep eggplant */
-    color: #e6e6e6;
+    background: #1F2526;
+    color: #CFD8DC;
     line-height: 1.6;
 }
 
@@ -16,14 +16,14 @@ body {
     top: 0;
     left: 0;
     height: 4px;
-    background: #6b4e9b; /* Vibrant royal purple */
+    background: #007BFF;
     width: 0;
     z-index: 1001;
     transition: width 0.2s ease-out;
 }
 
 header {
-    background: #3d2b56; /* Dark royal purple */
+    background: #3A4445;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -31,17 +31,17 @@ header {
     position: fixed;
     width: 100%;
     z-index: 1000;
-    border-bottom: 1px solid #4b3a6b;
+    border-bottom: 1px solid #4A5455;
 }
 
 .logo {
     font-size: 1.5em;
     font-weight: 600;
-    color: #a68bc5; /* Light purple */
+    color: #007BFF;
 }
 
 nav a {
-    color: #e6e6e6;
+    color: #CFD8DC;
     text-decoration: none;
     margin-left: 25px;
     font-weight: 400;
@@ -49,7 +49,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #6b4e9b; /* Vibrant royal purple */
+    color: #007BFF;
 }
 
 #hero {
@@ -58,19 +58,19 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(to bottom, #2e1a47, #3d2b56);
+    background: linear-gradient(to bottom, #1F2526, #3A4445);
 }
 
 .hero-content h1 {
     font-size: 3.5em;
     font-weight: 800;
-    color: #a68bc5; /* Light purple */
+    color: #007BFF;
     margin-bottom: 20px;
 }
 
 .fade-words {
     font-size: 1.5em;
-    color: #e6e6e6;
+    color: #CFD8DC;
 }
 
 .fade-words span {
@@ -79,19 +79,19 @@ nav a:hover {
 }
 
 .fade-words span:nth-child(1) {
-    animation-delay: 0.5s; /* "Web Developer" fades in first */
+    animation-delay: 0.5s;
 }
 
 .fade-words span:nth-child(3) {
-    animation-delay: 1.5s; /* "AI Enthusiast" fades in second */
+    animation-delay: 1.5s;
 }
 
 .cta-button {
     display: inline-block;
     margin-top: 30px;
     padding: 12px 30px;
-    background: #6b4e9b; /* Vibrant royal purple */
-    color: #e6e6e6;
+    background: #007BFF;
+    color: #CFD8DC;
     text-decoration: none;
     font-weight: 600;
     border-radius: 5px;
@@ -99,7 +99,7 @@ nav a:hover {
 }
 
 .cta-button:hover {
-    background: #5a3f85; /* Darker royal purple */
+    background: #0056B3;
     transform: translateY(-3px);
 }
 
@@ -112,10 +112,10 @@ main {
 section {
     padding: 40px;
     margin-bottom: 40px;
-    background: rgba(61, 43, 86, 0.8); /* Dark royal purple with transparency */
+    background: rgba(58, 68, 69, 0.8);
     backdrop-filter: blur(10px);
     border-radius: 8px;
-    border: 1px solid rgba(75, 58, 107, 0.5);
+    border: 1px solid rgba(74, 84, 85, 0.5);
 }
 
 .fade-in {
@@ -132,7 +132,7 @@ section {
 h2 {
     font-size: 2em;
     font-weight: 600;
-    color: #a68bc5; /* Light purple */
+    color: #007BFF;
     margin-bottom: 20px;
     position: relative;
 }
@@ -142,7 +142,7 @@ h2::after {
     position: absolute;
     width: 40px;
     height: 2px;
-    background: #6b4e9b; /* Vibrant royal purple */
+    background: #007BFF;
     bottom: -5px;
     left: 0;
 }
@@ -157,7 +157,7 @@ h2::after {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    border: 2px solid #6b4e9b; /* Vibrant royal purple */
+    border: 2px solid #007BFF;
     transition: transform 0.3s;
 }
 
@@ -181,46 +181,86 @@ h2::after {
 }
 
 .project-card {
-    background: rgba(71, 52, 102, 0.8); /* Slightly lighter purple with transparency */
+    background: rgba(58, 68, 69, 0.8);
     backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid rgba(75, 58, 107, 0.5);
+    border: 1px solid rgba(74, 84, 85, 0.5);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(107, 78, 155, 0.6), 0 0 30px rgba(107, 78, 155, 0.4);
+    box-shadow: 0 5px 20px rgba(0, 123, 255, 0.6), 0 0 30px rgba(0, 123, 255, 0.4);
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 15px;
 }
 
 .project-img {
     width: 100%;
-    height: 150px;
+    height: 100%;
     object-fit: cover;
     border-radius: 5px;
-    margin-bottom: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.project-img.active {
+    display: block;
+}
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 123, 255, 0.7); /* Electric Blue with transparency */
+    color: #CFD8DC;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background 0.3s;
+}
+
+.slide-btn.prev {
+    left: 10px;
+}
+
+.slide-btn.next {
+    right: 10px;
+}
+
+.slide-btn:hover {
+    background: #0056B3; /* Darker Electric Blue */
 }
 
 .project-link {
-    color: #6b4e9b; /* Vibrant royal purple */
+    color: #007BFF;
     text-decoration: none;
     font-weight: 600;
 }
 
 .project-link:hover {
-    color: #a68bc5; /* Light purple */
+    color: #CFD8DC;
     text-decoration: underline;
 }
 
 .social-links a {
-    color: #6b4e9b;
+    color: #007BFF;
     text-decoration: none;
     margin: 0 10px;
 }
 
 .social-links a:hover {
-    color: #a68bc5;
+    color: #CFD8DC;
 }
 
 .social-links i {
@@ -230,18 +270,18 @@ h2::after {
 footer {
     text-align: center;
     padding: 20px;
-    background: rgba(61, 43, 86, 0.8); /* Match section style */
+    background: rgba(58, 68, 69, 0.8);
     backdrop-filter: blur(10px);
-    border-top: 1px solid rgba(75, 58, 107, 0.5);
-    color: #e6e6e6;
+    border-top: 1px solid rgba(74, 84, 85, 0.5);
+    color: #CFD8DC;
 }
 
 #back-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #6b4e9b;
-    color: #e6e6e6;
+    background: #007BFF;
+    color: #CFD8DC;
     border: none;
     border-radius: 50%;
     width: 40px;
@@ -258,6 +298,7 @@ footer {
 
 #back-to-top:hover {
     transform: scale(1.1);
+    background: #0056B3;
 }
 
 @keyframes fadeIn {

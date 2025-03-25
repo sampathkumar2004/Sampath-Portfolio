@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Sampath Kumar | Developer</title>
+    <title>Sampath Kumar | Backend Developer</title>
 </head>
 <body>
     <div id="progress-bar"></div>
@@ -26,7 +26,7 @@
         <div class="hero-content">
             <h1>Bandaru Sampath Kumar</h1>
             <p class="fade-words">
-                <span>Web Developer</span> | <span>AI Enthusiast</span>
+                <span>Backend Developer</span> | <span>AI Enthusiast</span>
             </p>
             <a href="#projects" class="cta-button">View My Work</a>
         </div>
@@ -79,21 +79,39 @@
             <h2>Projects</h2>
             <div class="projects-container">
                 <div class="project-card">
-                    <img src="portfolio-screenshot.jpg" alt="Portfolio" class="project-img">
+                    <div class="slideshow">
+                        <img src="portfolio-screenshot.jpg" alt="Portfolio 1" class="project-img active">
+                        <img src="portfolio-screenshot2.jpg" alt="Portfolio 2" class="project-img">
+                        <img src="portfolio-screenshot3.jpg" alt="Portfolio 3" class="project-img">
+                        <button class="slide-btn prev" data-project="portfolio">&#10094;</button>
+                        <button class="slide-btn next" data-project="portfolio">&#10095;</button>
+                    </div>
                     <h3>Portfolio</h3>
                     <p>A minimalist showcase of my skills and projects, designed with a focus on clean UI/UX, smooth animations, and responsive layouts using HTML and CSS.</p>
-                    <p><strong>Tech:</strong> HTML, CSS ,JavaScript</p>
+                    <p><strong>Tech:</strong> HTML, CSS</p>
                     <a href="#" class="project-link">Live Demo</a>
                 </div>
                 <div class="project-card">
-                    <img src="student-scheduler-screenshot.jpg" alt="Student Scheduler" class="project-img">
+                    <div class="slideshow">
+                        <img src="student-scheduler-screenshot.jpg" alt="Student Scheduler 1" class="project-img active">
+                        <img src="student-scheduler-screenshot2.jpg" alt="Student Scheduler 2" class="project-img">
+                        <img src="student-scheduler-screenshot3.jpg" alt="Student Scheduler 3" class="project-img">
+                        <button class="slide-btn prev" data-project="student-scheduler">&#10094;</button>
+                        <button class="slide-btn next" data-project="student-scheduler">&#10095;</button>
+                    </div>
                     <h3>Student Scheduler</h3>
                     <p>A web application to help students manage their schedules, featuring timetable creation, task tracking, and deadline reminders, built with a responsive front-end and efficient back-end integration.</p>
-                    <p><strong>Tech:</strong> <br> Frontend : HTML, CSS, JavaScript <br> Backend : Python <br> Database : MongoDB</p>
+                    <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
                     <a href="#" class="project-link">Live Demo</a>
                 </div>
                 <div class="project-card">
-                    <img src="fake-news-screenshot.jpg" alt="Fake News" class="project-img">
+                    <div class="slideshow">
+                        <img src="fake-news-screenshot.jpg" alt="Fake News 1" class="project-img active">
+                        <img src="fake-news-screenshot2.jpg" alt="Fake News 2" class="project-img">
+                        <img src="fake-news-screenshot3.jpg" alt="Fake News 3" class="project-img">
+                        <button class="slide-btn prev" data-project="fake-news">&#10094;</button>
+                        <button class="slide-btn next" data-project="fake-news">&#10095;</button>
+                    </div>
                     <h3>Fake News Detection</h3>
                     <p>An AI-driven tool to identify misinformation, leveraging natural language processing (NLP) and machine learning to analyze text data, built with Python and libraries like Scikit-learn and NLTK.</p>
                     <p><strong>Tech:</strong> Python, Scikit-learn, NLTK</p>
