@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Sampath Kumar | Backend Developer</title>
+    <title>Sampath Kumar | Backend Develper </title>
 </head>
 <body>
     <div id="progress-bar"></div>
@@ -14,128 +14,192 @@
         <div class="logo">Sampath Kumar</div>
         <nav>
             <a href="#about">About</a>
-            <a href="#education">Education</a>
             <a href="#skills">Skills</a>
-            <a href="#courses">Courses</a>
             <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#Certifications">Courses or Certifications</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section id="hero">
+    <section id="hero" class="fade-in">
         <div class="hero-content">
-            <h1>Bandaru Sampath Kumar</h1>
-            <p class="fade-words">
-                <span>Backend Developer</span> | <span>AI Enthusiast</span>
-            </p>
-            <a href="#projects" class="cta-button">View My Work</a>
+            <img src="IMG20231205120833.jpg" alt="Sampath Kumar" class="hero-img">
+            <div class="hero-title-3d">
+                <h1>Backend Develper </h1>
+            </div>
+            <p>Crafting robust systems with Python, Java, and MongoDB—passionate about APIs, Databases</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
         </div>
+        <canvas id="nebula-bg"></canvas>
     </section>
 
     <main>
         <section id="about" class="fade-in">
             <h2>About Me</h2>
-            <div class="about-content">
-                <img src="IMG20231205120833.jpg" alt="Profile Picture" class="profile-pic">
-                <p>I’m a final-year BTech student in Computer Science at CT University, Punjab. With a passion for web development and artificial intelligence, I build efficient, innovative solutions to real-world challenges. I thrive on tackling complex problems, exploring cutting-edge technologies, and creating user-focused applications. My goal is to blend creativity with technical expertise to shape the future of tech.</p>
+            <p>I’m a final-year BTech student in Computer Science at CT University, Punjab.
+                 With a passion for web development and artificial intelligence, I build efficient, innovative solutions to real-world challenges. 
+                 I thrive on tackling complex problems, exploring cutting-edge technologies, and creating user-focused applications. 
+                 My goal is to blend creativity with technical expertise to shape the future of tech.</p>
+            <div class="tech-stack">
+                <p><strong>Core Technologies:</strong> Python, JavaScript</p>
+                <p><strong>Databases:</strong> MongoDB, SQL</p>
             </div>
         </section>
 
-        <div class="container">
-            <section id="education" class="fade-in">
-                <h2>Education</h2>
-                <p><strong>B.Tech in Computer Science</strong><br>CT University, Punjab<br>Expected 2025 | CGPA: 7.4</p>
-                <br>
-                <p><strong>MPC</strong><br>Pragathi Inter College, Kakinada<br>2021 | Percentage : 85%</p>
-                <br>
-                <p><strong>10th</strong><br>Sama School, Kakinada<br>2019 | CGPA: 9.2</p>
-            </section>
-            <section id="skills" class="fade-in">
-                <h2>Skills</h2>
-                <h3>Technical Skills</h3>
-                <ul>
-                    <li>Python, Java</li>
-                    <li>HTML, CSS, JavaScript</li>
-                    <li>MongoDB</li>
-                </ul>
-                <br>
-                <h3>Soft Skills</h3>
-                <ul>
-                    <li>Communication</li>
-                    <li>Teamwork</li>
-                    <li>Problem Solving</li>
-                </ul>
-            </section>
-        </div>
-
-        <section id="courses" class="fade-in">
-            <h2>Courses & Certifications</h2>
-            <p><strong>Web Development</strong> - Internshala, 2022<br>Hands-on training in modern web technologies, including responsive design with HTML, CSS, and JavaScript, culminating in building a fully functional portfolio site.</p>
-            <br>
-            <p><strong>Machine Learning & Deep Learning</strong> - IBM Skill Build, 2024<br>Advanced AI concepts and applications, covering supervised and unsupervised learning, neural networks, and practical implementation using Python libraries like TensorFlow and Scikit-learn.</p>
+        <section id="skills" class="fade-in">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-tilt>
+                    <i class="fab fa-html5"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS</span>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <i class="fas fa-database"></i>
+                    <span>MongoDB</span>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <i class="fas fa-server"></i>
+                    <span>API Design</span>
+                </div>
+            </div>
         </section>
 
         <section id="projects" class="fade-in">
             <h2>Projects</h2>
-            <div class="projects-container">
-                <div class="project-card">
-                    <div class="slideshow">
-                        <img src="portfolio-screenshot.jpg" alt="Portfolio 1" class="project-img active">
-                        <img src="portfolio-screenshot2.jpg" alt="Portfolio 2" class="project-img">
-                        <img src="portfolio-screenshot3.jpg" alt="Portfolio 3" class="project-img">
-                        <button class="slide-btn prev" data-project="portfolio">&#10094;</button>
-                        <button class="slide-btn next" data-project="portfolio">&#10095;</button>
+            <div class="projects-grid">
+                <div class="project-card bounce-in">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="portfolio-screenshot.jpg" alt="Portfolio" class="project-img">
+                            <h3>Portfolio Site</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>Portfolio Site</h3>
+                            <p>A site showcasing about me , my skills, and my projects.</p>
+                            <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+                            <p><strong>Backend:</strong> None </p>
+                            <a href="#" class="project-link">Demo</a>
+                            <p> Actually what you are seeing that is only I have created using HTML, CSS and JavaScript. </p>
+                        </div>
                     </div>
-                    <h3>Portfolio</h3>
-                    <p>A minimalist showcase of my skills and projects, designed with a focus on clean UI/UX, smooth animations, and responsive layouts using HTML and CSS.</p>
-                    <p><strong>Tech:</strong> HTML, CSS</p>
-                    <a href="#" class="project-link">Live Demo</a>
                 </div>
-                <div class="project-card">
-                    <div class="slideshow">
-                        <img src="student-scheduler-screenshot.jpg" alt="Student Scheduler 1" class="project-img active">
-                        <img src="student-scheduler-screenshot2.jpg" alt="Student Scheduler 2" class="project-img">
-                        <img src="student-scheduler-screenshot3.jpg" alt="Student Scheduler 3" class="project-img">
-                        <button class="slide-btn prev" data-project="student-scheduler">&#10094;</button>
-                        <button class="slide-btn next" data-project="student-scheduler">&#10095;</button>
+                <div class="project-card bounce-in">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="scheduler-screenshot.jpg" alt="Scheduler" class="project-img">
+                            <h3>Student Scheduler</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>Scheduler</h3>
+                            <p>A tool for managing schedules with efficient data handling.
+                                It is a simple web application that allows users to add, remove, and edit events in their schedule
+                                Also , it has a feature to save the schedule to local storage so that the user can access it later
+                            </p>
+                            <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+                            <p><strong>Backend:</strong> Python </p>
+                            <p><strong>Database:</strong> MongoDB </p>
+                            <a href="#" class="project-link">Demo</a>
+                        </div>
                     </div>
-                    <h3>Student Scheduler</h3>
-                    <p>A web application to help students manage their schedules, featuring timetable creation, task tracking, and deadline reminders, built with a responsive front-end and efficient back-end integration.</p>
-                    <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-                    <a href="#" class="project-link">Live Demo</a>
                 </div>
-                <div class="project-card">
-                    <div class="slideshow">
-                        <img src="fake-news-screenshot.jpg" alt="Fake News 1" class="project-img active">
-                        <img src="fake-news-screenshot2.jpg" alt="Fake News 2" class="project-img">
-                        <img src="fake-news-screenshot3.jpg" alt="Fake News 3" class="project-img">
-                        <button class="slide-btn prev" data-project="fake-news">&#10094;</button>
-                        <button class="slide-btn next" data-project="fake-news">&#10095;</button>
+                <div class="project-card bounce-in">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="fake-news-screenshot.jpg" alt="Fake News" class="project-img">
+                            <h3>Fake News Detection</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>Fake News Detection</h3>
+                            <p>An ML-powered system to detect misinformation, stored in MongoDB.</p>
+                            <p><strong>Tech:</strong> Python, Scikit-learn, MongoDB</p>
+                            <p><strong>Backend:</strong> API + database architecture</p>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
                     </div>
-                    <h3>Fake News Detection</h3>
-                    <p>An AI-driven tool to identify misinformation, leveraging natural language processing (NLP) and machine learning to analyze text data, built with Python and libraries like Scikit-learn and NLTK.</p>
-                    <p><strong>Tech:</strong> Python, Scikit-learn, NLTK</p>
-                    <a href="#" class="project-link">Live Demo</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="fade-in">
+            <h2>Education</h2>
+            <div class="timeline-3d">
+                <div class="timeline-item" data-tilt>
+                    <h3>BTech in Computer Science</h3>
+                    <p><strong>CT University, Punjab</strong><br> 2021 - 2025 (Pursuing)</p>
+                    <p> CGPA : 7.4/10</p>
+                </div>
+                <div class="timeline-item" data-tilt>
+                    <h3>12th</h3>
+                    <p><strong>Pragathi Junior College, Kakinada</strong><br> 2019 - 2021</p>
+                    <p>Percentage: 85%.</p>
+                </div>
+                <div class="timeline-item" data-tilt>
+                    <h3>10th</h3>
+                    <p><strong>Sama School, Kakinada</strong> <br> 2018 - 2019</p>
+                    <p> CGPA : 9.2/10</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Certifications" class="fade-in">
+            <h2>Courses or Certifications</h2>
+            <div class="timeline-3d">
+                <div class="timeline-item" data-tilt>
+                    <h3>Internshala</h3>
+                    <p><strong>Web Development Course</strong> | 2022</p>
+                    <p>Hands-on training in modern web technologies, including responsive design with HTML, CSS, and JavaScript, culminating in building a fully functional portfolio site.</p>
+                </div>
+                <div class="timeline-item" data-tilt>
+                    <h3>IBM Skill Build</h3>
+                    <p><strong>ML & Deep Learning Course</strong> | 2024</p>
+                    <p>Advanced AI concepts and applications, covering supervised and unsupervised learning, neural networks, and practical implementation using Python libraries like TensorFlow and Scikit-learn.</p>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="fade-in">
             <h2>Contact</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
             <p>Email: <a href="mailto:bandarusampath11@gmail.com">bandarusampath11@gmail.com</a></p>
-            <p>Phone: <a href="tel:9290797555">9290797555</a></p>
+            <p>Phone: <a href="tel:+919290797555">+91 9290797555</a></p>
             <p class="social-links">
-                <a href="https://www.linkedin.com/in/bandaru-sampath-kumar-280297310/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> | 
-                <a href="https://github.com/sampathkumar2004" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/bandaru-sampath-kumar-280297310/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sampathkumar2004" target="_blank"><i class="fab fa-github"></i></a>
             </p>
         </section>
     </main>
 
     <footer>
-        <p>© 2025 Bandaru Sampath Kumar</p>
+        <p>© 2025 Sampath Kumar</p>
+        <p class="social-links">
+            <a href="https://www.linkedin.com/in/bandaru-sampath-kumar-280297310/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/sampathkumar2004" target="_blank"><i class="fab fa-github"></i></a>
+        </p>
     </footer>
 
-    <button id="back-to-top">↑</button>
+    <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
